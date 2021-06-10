@@ -1,0 +1,124 @@
+ *{
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+ 
+ 
+ .container{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content:center;
+     align-items: center;
+     /* height: 100vh; */
+     margin: 0;
+     background: #333;
+     background: url('https://source.unsplash.com/1600x900/?landscape');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: auto;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 120%;
+     /* border: 3px solid black; */
+     
+     
+ }
+ .card-container{
+    /* background: burlywood; */
+    /* border: 5px solid green; */
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+ }
+
+ .card{       
+     background: #232323;
+     color: #fff;
+     padding: 2em;
+     border-radius: 30px;
+     width: 100%;
+     max-width: 420px;
+     margin: auto;
+     opacity: 0.8;
+     
+ }
+
+ h2.city {
+    padding: 0.5em 0em;
+}
+
+ .date-container{
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    
+ }
+
+ .search{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+ button {
+    margin: 0.7em;
+    border-radius: 50%;
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    outline: none;
+    background: #7c7c7c57;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+
+ input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.5em 0.5em;
+    border-radius: 24px;    
+    height: 2.5em;
+    width: 20em;
+    background: #7c7c7c57;
+    font-size: 110%;
+    width: calc(100% - 100px);
+    color: #fff;
+}
+
+button:hover{
+    background: #7c7c7ca1;
+}
+h1.temp{
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+
+}
+
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+    
+}
+
+.weather .loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather .loading::after{
+    visibility: visible;
+    content: "Loading...";
+    color: #fff;
+    position: relative;
+    top: 0;
+    left: 20px;
+
+}
